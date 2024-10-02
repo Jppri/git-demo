@@ -1,0 +1,58 @@
+package Sele;
+
+public class Newww {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		Scanner sc = new Scanner(System.in);
+        String user;
+        String pass;
+        String approvedUser = null;
+        String approvedPass;
+        int userIndex;
+        int passIndex;
+        //boolean accountStatusisTrue = true;
+        String[] userNames = {"TunaPotato02", "FakeHappy"};
+        String[] passWords = {"Jefpre", "Pree"};
+
+        System.out.print("Username: ");
+        user = sc.nextLine();
+        System.out.print("Password: ");
+        pass = sc.nextLine();
+        System.out.print(" ");
+
+        for (int i = 0; i < userNames.length; i++) {
+            if (userNames[i].equals(user)) {
+                approvedUser = userNames[i];
+                System.out.println(approvedUser);
+                userIndex = i;
+                System.out.println(userIndex);
+            }
+            System.out.println(userIndex);
+        }
+
+
+
+
+
+           for (int j = 0; j < passWords.length; j++) {
+                if (passWords[j] == pass) {
+                    passIndex = j;
+                } else {
+                    passIndex = -1;
+                }
+                System.out.println(approvedPass);
+                System.out.println(passIndex);
+
+                if (userIndex == passIndex){
+                    System.out.println("Welcome, " + userNames[userIndex]);
+                } else {
+                    System.out.println("Account Not Found!");
+                }
+            }
+
+
+            } 
+	}
+
+}

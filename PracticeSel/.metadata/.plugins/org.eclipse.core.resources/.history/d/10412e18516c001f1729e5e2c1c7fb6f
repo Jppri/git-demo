@@ -1,0 +1,15 @@
+package Sele;
+import org.openqa.selenium.*;
+import org.openqa.selenium.chrome.*;
+import org.openqa.selenium.interactions.*;
+public class ActionsDemo {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		WebDriver driver = new ChromeDriver();
+		driver.get("https://www.amazon.com/Inc/s?k=Inc.");
+		Actions a = new Actions(driver);
+		a.moveToElement(driver.findElement(By.id("nav-link-accountList"))).build().perform();
+	}
+
+}

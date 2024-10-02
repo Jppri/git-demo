@@ -1,0 +1,22 @@
+package Sele;
+
+import org.openqa.selenium.By;
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.chrome.ChromeDriver;
+
+public class e2e {
+
+	public static void main(String[] args) throws InterruptedException {
+		// TODO Auto-generated method stub
+		WebDriver driver = new ChromeDriver();
+		driver.get("https://rahulshettyacademy.com/dropdownsPractise/");
+		driver.manage().window().maximize();
+		
+		driver.findElement(By.xpath("//a[@value='DEL']")).click();
+		System.out.println("From: "+ driver.findElement(By.xpath("//a[@value='DEL']")).getText());
+		Thread.sleep(1000);		
+		driver.findElement(By.xpath("(//a[@value='MAA'])[2]")).click();
+		System.out.println("To: "+ driver.findElement(By.xpath("(//a[@value='MAA'])[2]")).getText());
+	}
+
+}

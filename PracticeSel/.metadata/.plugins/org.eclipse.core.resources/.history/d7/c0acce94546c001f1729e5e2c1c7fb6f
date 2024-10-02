@@ -1,0 +1,15 @@
+package Sele;
+import org.openqa.selenium.*;
+import org.openqa.selenium.chrome.*;
+public class WindowHandles {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		WebDriver driver = new ChromeDriver();
+		driver.get("https://rahulshettyacademy.com/loginpagePractise/");
+		driver.findElement(By.cssSelector(".blinkingText")).click();
+		
+
+	}
+
+}

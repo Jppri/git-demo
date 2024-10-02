@@ -1,0 +1,24 @@
+INDEX VERSION 1.134+C:\Users\63915\PracticeSel\AppiumPractice\.metadata\.plugins\org.eclipse.jdt.core
+355065550.index
+2410798328.index
+401659931.index
+3057323005.index
+2958764694.index
+1546848499.index
+328397885.index
+163423710.index
+1136012713.index
+1166752170.index
+2019319934.index
+1487081137.index
+3874281199.index
+2870056561.index
+2376806188.index
+1939821351.index
+410595858.index
+2253564228.index
+2089224519.index
+527547395.index
+1819030208.index
+1865797976.index
+3069702311.index
